@@ -5,7 +5,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: "url(/img/weatherImage1.jpg)",
+        backgroundImage: "url(/img/weatherImage.png)",
         backgroundRepeat: "none",
         width: "2040 px",
         height: "1000px",
