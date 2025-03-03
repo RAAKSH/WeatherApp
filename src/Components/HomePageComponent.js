@@ -6,7 +6,7 @@ import { useState } from 'react';
 import ForeCast from './ForeCast/foreCastComponent';
 
 function HomePage() {
-console.log("I am here");
+
   const [currentWeather, setcurrentWeather] = useState(null);
   const [forecast, setForeCast] = useState(null);
 
@@ -30,14 +30,13 @@ console.log("I am here");
       .catch((err) => console.log(err));
   }
 
-  console.log('-------',currentWeather);
-  console.log("forecaset",forecast);
+
 
   return (
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast &&<ForeCast data={forecast} />}
+      {forecast && <ForeCast data={forecast} />}
     </div>
   );
 }

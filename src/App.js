@@ -1,17 +1,16 @@
 import HomePageComponent from "./Components/HomePageComponent";
 import "./App.css";
+import image from "./Assets/weatherImage.png"
 
 function App() {
   return (
     <div
-      style={{
-        backgroundImage: "url(/img/weatherImage.png)",
-        backgroundRepeat: "none",
-        width: "2040 px",
-        height: "1000px",
-      }}
+     className="weatherContainer"
+     style={{
+      backgroundImage: `url(${image})`,
+    }}
     >
-      <h1 style={{ color: "whitesmoke", padding: "10px", margin: "20px" }}>
+      <h1 style={{ color:"Black", padding: "10px", margin: "20px", }}>
         Weather Forecast{" "}
       </h1>
 
